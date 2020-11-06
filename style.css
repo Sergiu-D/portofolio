@@ -8,6 +8,10 @@ body{
     display: flex;
 }
 
+#nav-wrapper{
+    width: 20vw;
+    min-height:100vh;
+}
 .navigation{
     position: fixed;
     top: 0;
@@ -34,16 +38,23 @@ body{
 
 .navigation .navigation__list-item a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.435);
     transition: border-bottom .2s;
 }
+.navigation .navigation__list-item a.active{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: orangered;
+}
+
 
 .navigation .navigation__list-item a:hover{
-    border-bottom: 2px solid orangered;
-    padding: 0 15px 5px 15px;
+    color: white;
 }
 
 .container{
+    overflow-y:scroll;
     /* position: absolute;
     top: 0;
     right: 0; */
@@ -59,4 +70,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#main-area{
+    height:100vh;
+    flex:1;
+    display:flex;
+    flex-direction: column;
 }
