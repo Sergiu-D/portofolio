@@ -3,7 +3,7 @@ function callback(entries, observer) {
     entries.forEach(entry => checkDisplay(entry))
 }
 const options = {
-    threshold: .9,
+    threshold: .1,
     // threshold: 0.7,
     // root: document.querySelectorAll('.container')[0],
 };
@@ -25,9 +25,10 @@ function checkDisplay(entry) {
     }
     console.log(id, entry.isIntersecting)
 
-    //link from intersecting section
+    // link from intersecting section
     const navLink = document.querySelector(`[data-section='${id}']`)
 
+    // all nav links
     const allLinks = document.querySelectorAll('[data-section]')
 
     allLinks.forEach( li => li.classList.remove("active") )
@@ -41,4 +42,4 @@ function checkDisplay(entry) {
     // }
 }
 
-//document.querySelectorAll("[data-foo='1']")            
+//document.querySelectorAll("[data-foo='1']")                 
