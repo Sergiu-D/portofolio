@@ -6,6 +6,7 @@
 
 body{
     display: flex;
+    
 }
 
 #nav-wrapper{
@@ -37,17 +38,40 @@ body{
 
 
 .navigation .navigation__list-item a{
+    position: relative;
     text-decoration: none;
     color: rgba(245, 245, 245, 0.435);
-    transition: border-bottom .2s;
-}
-.navigation .navigation__list-item a.active{
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: orangered;
+    padding: 5px 10px;
+    /* transition: all .5s; */
+    transition: all .5s ease;
 }
 
+.navigation .navigation__list-item a.active{
+    color: white;
+    transition: all .5s ease;
+    /* border-bottom: 2px solid orangered; */
+}
+.navigation .navigation__list-item a.active::after{
+    position: absolute;
+    content: " ";
+    height: 2px;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: orangered;
+    animation: nav-underline .5s ease;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes nav-underline{
+    from{
+        transform: scale(0, 1);
+    }to{
+        transform: scale(1, 1);
+        
+    }
+}
 
 .navigation .navigation__list-item a:hover{
     color: white;
@@ -65,7 +89,7 @@ body{
 }
 
 .container section{
-    height: 150vh;
+    height: 100vh;
     border: 2px solid black;
     display: flex;
     align-items: center;

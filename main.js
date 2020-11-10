@@ -42,4 +42,4 @@ function checkDisplay(entry) {
     // }
 }
 
-//document.querySelectorAll("[data-foo='1']")                 
+//document.querySelectorAll("[data-foo='1']")                  
