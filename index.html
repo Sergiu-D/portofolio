@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
     <title>Sergiu's portofolio</title>
 </head>
 
@@ -26,21 +31,107 @@
                     <a data-section="contact" href="#contact">Contact</a>
                 </li>
             </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sergiu-dumitrescu-225710160/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sergiu-D"><i class="fab fa-github"></i></a>
+            </div>
         </nav>
+        
     </div>
     
     <div class="container">
         <section id="welcome" class="welcome">
-            <h1>Welcome!</h1>
+            <h1 class="welcome-title">Welcome!</h1>
         </section>
         <section id="about-me" class="about-me">
-            <h2>About me section</h2>
+            <h2 class="about-me__title">About me</h2>
+            <div class="about-me__introduction">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci repudiandae impedit distinctio quibusdam repellat fugit rem repellendus sed quo ullam culpa laboriosam aspernatur in inventore asperiores, deserunt a facere cumque facilis aliquid cupiditate illum? Quisquam officiis magnam facere suscipit neque! Inventore quis mollitia veritatis doloremque recusandae ea magni natus dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sit odio? Blanditiis ex suscipit assumenda praesentium eveniet illo sunt dicta nesciunt culpa eligendi! Ullam mollitia architecto fuga omnis nisi reprehenderit amet, molestiae quaerat voluptatibus officiis voluptatum quo ipsam eaque facilis nesciunt. Repellendus sequi, velit suscipit quis vel odio eos unde.</p>
+            </div>
+            <div class="about-me__skills">
+                
+            </div>
         </section>
         <section id="projects" class="projects">
-            <h2>My work</h2>
+            <div class="project">
+                <div class="project__mockup">
+                    <img src="img/project-mockup.png" alt="project-mockup">
+                </div>
+                <div class="project__info">
+                    <div class="project__title">Project Title</div>
+                    <div class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem id iusto eum pariatur nihil fuga aliquid mollitia nostrum impedit et temporibus, consequatur numquam ipsa animi corporis, ipsum excepturi asperiores!
+                    </div>
+                    <div class="project__buttons">
+                        <button class="btn">Visit</button>
+                        <button class="btn">Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__mockup">
+                    <img src="img/project-mockup.png" alt="project-mockup">
+                </div>
+                <div class="project__info">
+                    <div class="project__title">Project Title</div>
+                    <div class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem id iusto eum pariatur nihil fuga aliquid mollitia nostrum impedit et temporibus, consequatur numquam ipsa animi corporis, ipsum excepturi asperiores!
+                    </div>
+                    <div class="project__buttons">
+                        <button class="btn">Visit</button>
+                        <button class="btn">Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__mockup">
+                    <img src="img/project-mockup.png" alt="project-mockup">
+                </div>
+                <div class="project__info">
+                    <div class="project__title">Project Title</div>
+                    <div class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem id iusto eum pariatur nihil fuga aliquid mollitia nostrum impedit et temporibus, consequatur numquam ipsa animi corporis, ipsum excepturi asperiores!
+                    </div>
+                    <div class="project__buttons">
+                        <button class="btn">Visit</button>
+                        <button class="btn">Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__mockup">
+                    <img src="img/project-mockup.png" alt="project-mockup">
+                </div>
+                <div class="project__info">
+                    <div class="project__title">Project Title</div>
+                    <div class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem id iusto eum pariatur nihil fuga aliquid mollitia nostrum impedit et temporibus, consequatur numquam ipsa animi corporis, ipsum excepturi asperiores!
+                    </div>
+                    <div class="project__buttons">
+                        <button class="btn">Visit</button>
+                        <button class="btn">Code</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact" class="contact">
-            <h2>Contact</h2>
+            <form class="contact-form">
+                <div class="contact-form__input-box">
+                    <div class="contact-form__input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="contact">
+                    </div >
+
+                    <div class="contact-form__input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="contact">
+                    </div>
+                    
+                </div>
+                <div class="contact-form__message">
+                    <label for="message">Your Message</label>
+                    <input type="text" id="message" name="contact">
+                </div>
+                
+                <button class="btn">Send Message</button>
+            </form>
         </section>
     </div>
 

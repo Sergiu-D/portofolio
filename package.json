@@ -1,0 +1,15 @@
+{
+  "name": "portofolio-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d portofolio v3"
+  },
+  "author": "Sergiu",
+  "license": "ISC",
+  "homepage": "https://sergiu-D.github.io/portofolio",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
