@@ -105,6 +105,38 @@ body{
 
 /* =========== Sections =========== */
 
+
+/* Welcome section */
+
 .welcome{
+    display: flex;
+    align-items: center;
     background-color: #22153C;
+}
+.welcome-title{
+    margin-left: 3rem;
+    color: white;
+}
+
+/* About me section */
+
+.about-me{
+    background: linear-gradient(45deg, #3C9099, #06626D);
+    color: white;
+}
+
+.about-me__title{
+    margin: 0 2rem;
+    padding: 3rem 0;
+}
+
+.about-me__introduction{
+    display: flex;
+    justify-content: center;
+    
+}
+.about-me__introduction p{
+    font-size: .8rem;
+    line-height: 2rem;
+    margin: 0 2rem;
 }
