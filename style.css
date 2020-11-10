@@ -140,3 +140,54 @@ body{
     line-height: 2rem;
     margin: 0 2rem;
 }
+
+/* My Work section */
+
+.project{
+    display: flex;
+    background: linear-gradient(#445282, #516091);
+}
+
+.project__mockup{
+    background-color: rgba(255, 255, 255, .5);
+}
+.project__mockup img{
+    width: 30vw;
+}
+
+.project__info{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem;
+    color: white;
+}
+.project__title{
+    font-size: 2rem;
+}
+.project__description{
+    font-size: .8rem;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+.project__buttons .btn{
+    font-size: 1rem;
+    padding: .5rem 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #FF5E00;
+    background: none;
+    color: #FF5E00;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.project__buttons .btn:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+.project__buttons .btn:hover{
+    background-color: #FF5E00;
+    color: white;
+}
